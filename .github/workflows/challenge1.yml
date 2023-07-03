@@ -1,0 +1,40 @@
+# Challenge 1 - Creating a Complex Workflow
+
+name: Challenge 1
+
+on: push
+
+jobs:
+    job1:
+      name: Job 1
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout
+        uses: actions\checkout@v2
+      - name: Print Date
+        run: date
+    job2:
+      name: Job 2
+      runs-on: windows-latest
+      steps:
+      - name: Checkout
+        uses: actions\checkout@v2
+      - name: Print Date
+        run: Get-Date
+    job3:
+      name: Job 3
+      runs-on: macos-latest
+      steps:
+        - name: Checkout
+          uses: actions\checkout@v2
+        - name: Print Date
+          run: date
+    job4:
+      name: Job 4
+      runs-on: ubuntu-22.04
+      needs: [job1, job2, job3]
+      steps:
+        - name: Checkout
+          uses: actions\checkout@v2
+        - name: Print Date
+          run: date
