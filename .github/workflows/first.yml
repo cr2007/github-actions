@@ -1,6 +1,6 @@
 # 02_01
 
-name: first
+name: 02_01 - first
 
 on: [push]
 

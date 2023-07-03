@@ -1,6 +1,6 @@
 # 01_01
 
-name: CI
+name: 01_01 - CI
 
 on: [push]
 
