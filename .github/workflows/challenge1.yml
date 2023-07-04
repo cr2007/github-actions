@@ -30,7 +30,7 @@ jobs:
         - name: Print Date
           run: date
     job4:
-      name: Ubuntu
+      name: Ubuntu2
       runs-on: ubuntu-22.04
       needs: [job1, job2, job3]
       steps:
