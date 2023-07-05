@@ -5,7 +5,7 @@ name: Challenge 2
 on: push
 
 env:
-  ARTIFACT_NAME: "trump"
+  ARTIFACT_NAME: cr2007/Project-Euler/README.md
 
 jobs:
     job1:
